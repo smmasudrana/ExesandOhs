@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <div class="game-container">
+    <div class="game-board" id="board">
+      <div class="cell" onclick="makeMove(0)"></div>
+      <div class="cell" onclick="makeMove(1)"></div>
+      <div class="cell" onclick="makeMove(2)"></div>
+      <div class="cell" onclick="makeMove(3)"></div>
+      <div class="cell" onclick="makeMove(4)"></div>
+      <div class="cell" onclick="makeMove(5)"></div>
+      <div class="cell" onclick="makeMove(6)"></div>
+      <div class="cell" onclick="makeMove(7)"></div>
+      <div class="cell" onclick="makeMove(8)"></div>
+    </div>
+    <div id="status" class="status">Current player: X</div>
+    <button class="reset-button" onclick="resetGame()">Reset Game</button>
+  </div>
+
+  <div id="popupContainer" class="popup-container">
+    <div class="popup">
+      <h2 id="popupMessage"></h2>
+      <button onclick="resetGame()">New Game</button>
+    </div>
+  </div>
+  
+  <div class="game-container">
+    
+    </div>
+  <footer class="footer">
+    <p>&copy; 2023 <B> <a class="msdr" href="https://www.facebook.com/iamsarkermohammadmasud"> - Masud Rana</a></B> . All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
